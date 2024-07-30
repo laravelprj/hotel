@@ -97,4 +97,10 @@
 @include('frontend.home.blog')
 
 <!-- Blog Area End -->
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    if(urlParams.get('message') == 'success'){
+        alert('Đặt phòng thành công')
+    }
+</script>
 @endsection

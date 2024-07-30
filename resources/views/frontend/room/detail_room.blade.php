@@ -260,13 +260,14 @@
         <div class="row ">
             
            @foreach ($otherRooms as $item)
+           {{-- {{ dd($item); }} --}}
                 <div class="col-lg-6">
                     <div class="room-card-two">
                         <div class="row align-items-center">
                             <div class="col-lg-5 col-md-4 p-0">
                                 <div class="room-card-img">
                                     <a href="{{ url('room/details/'.$item->id) }}">
-                                        <img src="{{ asset( 'upload/rooming/'.$item->image ) }}" alt="Images">
+                                        <img style="width: 350px;height:280px" src="{{ asset( $item->image ) }}" alt="Images">
                                     </a>
                                 </div>
                             </div>
